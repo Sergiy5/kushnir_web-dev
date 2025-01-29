@@ -1,0 +1,35 @@
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        bg: "#F9F9F9",
+        bgDark: "#000000",
+        bgFooter:"#000000",
+        grey_300: "#D1D1D1",
+        grey_400: "#6E6E6E",
+        grey_500: "#454545",
+        white: "#FFFFFF",
+        black_900: "#171717",
+        black: "#000000",
+        green_600: "#9BEF2D",
+        green_500: "#B8FF5B",
+        accentGreen: "#B8FF5B",
+        textFooter: "#D1D1D1",
+        textBlack: "#000000",
+        textBlack_900: "#171717",
+        textWhite: "#FFFFFF",
+      },
+      fontFamily: {
+        sans: "var(--font-space-grotesk), sans-serif",
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
