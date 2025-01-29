@@ -11,7 +11,8 @@ export default {
       colors: {
         bg: "#F9F9F9",
         bgDark: "#000000",
-        bgFooter:"#000000",
+        bgProject: "#171717",
+        bgFooter: "#000000",
         grey_300: "#D1D1D1",
         grey_400: "#6E6E6E",
         grey_500: "#454545",
@@ -23,8 +24,9 @@ export default {
         accentGreen: "#B8FF5B",
         textFooter: "#D1D1D1",
         textBlack: "#000000",
-        textBlack_900: "#171717",
-        textWhite: "#FFFFFF",
+        textDark: "#171717",
+        textLight: "#FFFFFF",
+        textGrey: "#6E6E6E",
       },
       fontFamily: {
         sans: "var(--font-space-grotesk), sans-serif",

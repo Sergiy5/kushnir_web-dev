@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 body {
-  @apply font-sans text-base font-normal text-[#6e6e6e]
+  @apply font-sans text-lg font-normal bg-bg text-textDark
 }
 
 p,
@@ -27,6 +22,14 @@ p {
   @apply font-sans text-base font-normal text-inherit
 }
 
+h2 {
+  @apply text-7xl font-bold
+}
+
+h3 {
+  @apply font-bold text-4xl leading-[50px];
+}
+
 /* h1 {
   font-weight: 700;
   font-size: 40px;
@@ -40,13 +43,7 @@ p {
   }
 }
 
-h2 {
-  @apply text-4xl font-semibold
-}
 
-h3 {
-  @apply font-medium text-3xl leading-9 tracking-normal md:text-2xl;
-}
 
 h4 {
   @apply font-light text-2xl leading-9 tracking-normal;
@@ -66,7 +63,7 @@ li {
 }
 
 span {
-  @apply font-normal
+  @apply font-normal text-textGrey
 }
 
 a {

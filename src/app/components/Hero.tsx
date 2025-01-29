@@ -1,4 +1,5 @@
 export const Hero: React.FC = () => {
+
   return (
     <main className="flex justify-start items-start flex-col gap-[54px] w-full">
       <div className="container flex flex-col gap-14">
@@ -10,7 +11,7 @@ export const Hero: React.FC = () => {
             <p className=" text-lg font-bold leading-5 text-[black]">
               &lt;React TS Next.js Node.js Tailwind CSS-in-JS&gt;
             </p>
-            <p className="text-lg font-normal text-left leading-7 text-textBlack">
+            <p className="text-textDark">
               A full-stack developer focused on creating scalable, efficient
               solutions. With an engineering background and a structured
               problem-solving approach, I contribute effectively to both team
