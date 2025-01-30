@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ShowMoreBtn } from "./ui/ShowMoreBtn";
+import { Icon } from "./ui/Icon";
 
 // interface ProjectList {}
 export const ProjectsList: React.FC = () => {
@@ -11,7 +13,6 @@ export const ProjectsList: React.FC = () => {
           <li className="flex justify-between items-center gap-5">
             {/* Left part ==============================================================*/}
             <div className="flex flex-col gap-12 items-start w-[553px] pr-[130px]">
-              
               <div className="flex flex-col gap-4">
                 <span className="text-grey_500 text-8xl font-bold ">
                   &lt;1&gt;
@@ -25,15 +26,16 @@ export const ProjectsList: React.FC = () => {
                 </p>
               </div>
 
-              <p className="flex flex-col items-start text-textLight">
+              <p className="flex flex-col items-start font-bold text-textLight">
                 <span>Tech Stack</span>
                 Next.js, TypeScript, Axios, useSWR, Material UI, Tailwind CSS,
                 Strapi, Node.js, PostgreSQL
               </p>
 
-              <button type="button" className="text-textLight">
-                Show more
-              </button>
+              <ShowMoreBtn>
+                <p>Show more</p>
+                <Icon id="icon-arrow_down" width={25} height={12} className="mt-[0.5px]" />
+              </ShowMoreBtn>
             </div>
 
             {/* Right part ==============================================================*/}

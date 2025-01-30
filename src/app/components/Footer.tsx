@@ -1,3 +1,5 @@
+import { Button } from "./ui/Button";
+
 export const Footer: React.FC = () => {
   return (
     <div className="block bg-bgFooter text-textFooter w-full">
@@ -9,9 +11,9 @@ export const Footer: React.FC = () => {
             <p className="text-inherit">Services</p>
             <p className="text-inherit">GitHub</p>
 
-            <button className="bg-[#b8ff5b]  text-lg font-bold leading-5 text-[black] min-w-[220px] h-[52px] w-[220px] cursor-pointer rounded-full border-[none]">
+            <Button >
               Download CV
-            </button>
+            </Button>
           </div>
         </div>
 

@@ -1,3 +1,5 @@
+import { Button } from "./ui/Button";
+
 export const Hero: React.FC = () => {
 
   return (
@@ -17,9 +19,9 @@ export const Hero: React.FC = () => {
               problem-solving approach, I contribute effectively to both team
               and individual projects.
             </p>
-            <button className="bg-[#b8ff5b]  text-lg font-bold leading-5 text-[black] min-w-[220px] h-[52px] w-[220px] cursor-pointer rounded-full border-[none]">
+            <Button >
               Download CV
-            </button>
+            </Button>
           </div>
           {/* Animation start */}
           <div>
