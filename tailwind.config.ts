@@ -30,6 +30,7 @@ export default {
       },
       fontFamily: {
         sans: "var(--font-space-grotesk), sans-serif",
+        technology: "var(--font-technology), sans-serif",
       },
     },
   },
