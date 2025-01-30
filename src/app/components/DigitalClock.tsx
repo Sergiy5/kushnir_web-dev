@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { format } from "date-fns";
 
 export default function DigitalClock() {
   const [time, setTime] = useState(new Date());
-
+const formattedDate = format(time, "EEE dd MMM").toUpperCase();
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
@@ -20,19 +21,19 @@ export default function DigitalClock() {
   return (
     <div className="flex flex-col items-center justify-center gap-6 bg-white rounded-[20px] w-full aspect-[522/239] p-6 ">
       <div className="flex items-center justify-between w-full">
-        <p>My Local Time </p>
-        <p>MON 12 JAN</p>
+        <p className="font-bold">My Local Time </p>
+        <p className="text-textGrey uppercase">{formattedDate}</p>
       </div>
-      <div className="flex justify-between w-full tracking-widest text-textDark text-8xl">
-        <span className=" text-start text-inherit w-full h-full ">
+      <div className="flex justify-end w-full tracking-[0.1em] text-textDark text-8xl">
+        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
           {hours}
         </span>
-        <span>:</span>
-        <span className=" text-start text-inherit w-full h-full ">
+        <span className="text-center w-full text-inherit">:</span>
+        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
           {minutes}
         </span>
-        <span>:</span>
-        <span className=" text-start text-inherit w-full h-full ">
+        <span className="text-center w-full text-inherit">:</span>
+        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
           {seconds}
         </span>
       </div>

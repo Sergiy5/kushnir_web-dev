@@ -1,3 +1,5 @@
+"use client";
+
 import { PROJECTS } from "../../../public/projects/projects";
 import { ProjectItem } from "./ProjectItem";
 
@@ -11,16 +13,16 @@ export const ProjectsList: React.FC = () => {
         <ul className="flex flex-col">
           {PROJECTS.map((project, index) => {
             return (
+                <li key={index}>
               <>
-                <li key={project.title}>
                   <ProjectItem
                     project={{ projectNuber: index + 1, ...project }}
                   />
-                </li>
+                </>
                 {index < PROJECTS.length - 1 && (
                   <div className="w-full h-[0.5px] bg-grey_500"></div>
                 )}
-              </>
+                </li>
             );
           })}
 

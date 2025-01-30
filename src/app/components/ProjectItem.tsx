@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { ShowMoreBtn } from "./ui/ShowMoreBtn";
 import { Icon } from "./ui/Icon";
