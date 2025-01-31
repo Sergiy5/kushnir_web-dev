@@ -1,7 +1,12 @@
 "use client";
 
+import { lazy } from "react";
 // import { GitAnime } from "./GitAnime";
 import { Button } from "./ui/Button";
+
+const GitAnimeLazy = lazy(() =>
+  import("./GitAnime").then((module) => ({ default: module.GitAnime }))
+);
 
 export const Hero: React.FC = () => {
 
@@ -26,7 +31,7 @@ export const Hero: React.FC = () => {
           </div>
           {/* Animation start */}
           <div className="max-w-[540px] w-full">
-            {/* <GitAnime /> */}
+            <GitAnimeLazy />
           </div>
           {/* Animation end */}
         </div>
