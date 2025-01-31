@@ -1,6 +1,6 @@
 "use client";
 
-import { GitAnime } from "./GitAnime";
+// import { GitAnime } from "./GitAnime";
 import { Button } from "./ui/Button";
 
 export const Hero: React.FC = () => {
@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
           </div>
           {/* Animation start */}
           <div className="max-w-[540px] w-full">
-            <GitAnime />
+            {/* <GitAnime /> */}
           </div>
           {/* Animation end */}
         </div>
