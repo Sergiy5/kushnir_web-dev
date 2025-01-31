@@ -1,13 +1,11 @@
+"use client";
+
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { Icon } from "./ui/Icon";
 import { contacts } from "../content";
+import { lazy } from "react";
 
-const DigitalClockDynamic = dynamic(() => import("../components/DigitalClock"));  
-
-// const DynamicQuiz = dynamic(() =>
-//   import("../../components/quiz/Quiz").then((mod) => mod.Quiz)
-// );
+const DigitalClockDynamic = lazy(() => import("../components/DigitalClock"));  
 
 export const ClockContactsSection: React.FC = () => {
   
