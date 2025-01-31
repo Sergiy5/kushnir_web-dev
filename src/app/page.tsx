@@ -2,11 +2,11 @@
 import { ProjectsList } from "./components/ProjectsList";
 import { Hero } from "./components/Hero";
 import { ServicesList } from "./components/ServicesList";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const ClockContactsSectionDynamic = dynamic(() =>
-  import("../app/components/ClockContactSection").then((mod) => mod.ClockContactsSection)
-);
+// const ClockContactsSectionDynamic = dynamic(() =>
+//   import("../app/components/ClockContactSection").then((mod) => mod.ClockContactsSection)
+// );
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <ProjectsList />
       <ServicesList />
-      <ClockContactsSectionDynamic />
+      {/* <ClockContactsSectionDynamic /> */}
     </div>
   );
 }
