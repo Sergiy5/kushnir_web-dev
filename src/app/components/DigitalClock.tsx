@@ -7,8 +7,8 @@ import { nanoid } from "nanoid";
 export default function DigitalClock() {
   const [time, setTime] = useState< Date | null >( null  );
   const formattedDate = format(time || new Date(), "EEE dd MMM").toUpperCase();
-  useEffect(() => {
 
+  useEffect(() => {
       setTime(new Date())
   }, []);
 
@@ -72,6 +72,3 @@ export default function DigitalClock() {
     </div>
   );
 }
-// font-weight: 800;
-// font-size: 40px;
-// color: var(--color-green-500-accent);

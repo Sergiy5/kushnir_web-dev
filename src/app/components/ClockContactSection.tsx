@@ -1,14 +1,20 @@
 import Link from "next/link";
-import DigitalClock from "./DigitalClock";
+import dynamic from "next/dynamic";
 import { Icon } from "./ui/Icon";
 import { contacts } from "../content";
 
+const DigitalClockDynamic = dynamic(() => import("../components/DigitalClock"));  
+
+// const DynamicQuiz = dynamic(() =>
+//   import("../../components/quiz/Quiz").then((mod) => mod.Quiz)
+// );
 
 export const ClockContactsSection: React.FC = () => {
+  
   return (
     <section className="container flex justify-between items-center py-[100px]">
       <div className="flex justify-center items-center w-1/2 pr-32">
-        <DigitalClock />
+        <DigitalClockDynamic />
       </div>
       <div className=" flex flex-col justify-between items-center gap-10 w-1/2 ">
         <p>
