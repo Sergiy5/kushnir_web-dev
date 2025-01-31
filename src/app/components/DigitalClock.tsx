@@ -2,10 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
+import { nanoid } from "nanoid";
 
 export default function DigitalClock() {
-  const [time, setTime] = useState(new Date());
-const formattedDate = format(time, "EEE dd MMM").toUpperCase();
+  const [time, setTime] = useState< Date | null >( null  );
+  const formattedDate = format(time || new Date(), "EEE dd MMM").toUpperCase();
+  useEffect(() => {
+
+      setTime(new Date())
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
@@ -14,27 +20,49 @@ const formattedDate = format(time, "EEE dd MMM").toUpperCase();
     return () => clearInterval(interval);
   }, []);
 
-  const hours = time.getHours().toString().padStart(2, "0");
-  const minutes = time.getMinutes().toString().padStart(2, "0");
-  const seconds = time.getSeconds().toString().padStart(2, "0");
-
+  const hours = time?.getHours().toString().padStart(2, "0");
+  const minutes = time?.getMinutes().toString().padStart(2, "0");
+  const seconds = time?.getSeconds().toString().padStart(2, "0");
+  
   return (
-    <div className="flex flex-col items-center justify-center gap-6 bg-white rounded-[20px] w-full aspect-[522/239] p-6 ">
+    <div className="flex flex-col items-center justify-center gap-6 bg-white rounded-[20px] w-[525px] h-[258px] p-6 ">
       <div className="flex items-center justify-between w-full">
         <p className="font-bold">My Local Time </p>
         <p className="text-textGrey uppercase">{formattedDate}</p>
       </div>
-      <div className="flex justify-end w-full tracking-[0.1em] text-textDark text-8xl">
-        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
-          {hours}
+      <div className="flex justify-center w-full font-advanced-pixel-lcd text-textDark text-5xl h-full">
+        <span
+          key={nanoid()}
+          className="relative flex items-center justify-center text-gray-100"
+        >
+          88
+          <span className="absolute text-textDark top-[25px] left-0.6">
+            {hours}
+          </span>
         </span>
-        <span className="text-center w-full text-inherit">:</span>
-        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
-          {minutes}
+        <span key={nanoid()} className="flex items-center w-full">
+          :
         </span>
-        <span className="text-center w-full text-inherit">:</span>
-        <span className="flex justify-center text-inherit w-full min-w-[105px] ">
-          {seconds}
+        <span
+          key={nanoid()}
+          className="relative flex items-center justify-center text-gray-100 w-full min-w-[115px] "
+        >
+          88
+          <span className="absolute text-textDark top-[25px] left-0.5">
+            {minutes}
+          </span>
+        </span>
+        <span key={nanoid()} className="flex items-center w-full text-inherit">
+          :
+        </span>
+        <span
+          key={nanoid()}
+          className="relative flex items-center justify-center text-gray-100 w-full min-w-[115px] "
+        >
+          88
+          <span className="absolute text-textDark top-[25px] left-0.5">
+            {seconds}
+          </span>
         </span>
       </div>
       <div className="flex items-center justify-between w-full text-green_500 ">

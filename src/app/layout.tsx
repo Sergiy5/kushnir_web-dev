@@ -13,21 +13,31 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500",  "600", "700"],
 });
 
-const technology = localFont({
+// const technology = localFont({
+//   src: [
+//     {
+//       path: "../../public/fonts/technology/Technology-Bold.woff2",
+//       weight: "700",
+//       style: "normal",
+//     },
+//     {
+//       path: "../../public/fonts/technology/Technology.woff2",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-technology",
+//   display: "swap",
+// });
+const advanced_pixel_lcd = localFont({
   src: [
     {
-      path: "../../public/fonts/technology/Technology-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/technology/Technology.woff2",
+      path: "../../public/fonts/advanced_pixel/advanced_pixel_lcd-7.ttf",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-technology",
-  display: "swap",
+  variable: "--font-advanced-pixel-lcd",
 });
 
 export const metadata: Metadata = {
@@ -46,7 +56,7 @@ export default function RootLayout({
         {/* <link rel="icon" type="image/svg+xml" href=""></link> */}
         <title>Kushnir Web Dev</title>
       </head>
-      <body className={`${spaceGrotesk.className} ${spaceGrotesk.variable} ${technology.className} ${technology.variable} antialiased`}>
+      <body className={`${advanced_pixel_lcd.className} ${advanced_pixel_lcd.variable} ${spaceGrotesk.className} ${spaceGrotesk.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

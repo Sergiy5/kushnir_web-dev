@@ -29,8 +29,9 @@ export default {
         textGrey: "#6E6E6E",
       },
       fontFamily: {
-        sans: "var(--font-space-grotesk), sans-serif",
+        space_grotesk: "var(--font-space-grotesk), sans-serif",
         technology: "var(--font-technology), sans-serif",
+        advancedPixel: "var(--font-advanced-pixel-lcd), sans-serif",
       },
     },
   },
