@@ -1,11 +1,11 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { PROJECTS } from "../../../public/projects/projects";
+import { PROJECTS } from "../content";
 
-const ProjectItemDynamic = dynamic(() => import("./ProjectItem").then((mod) =>
-  mod.ProjectItem
-));
+const ProjectItemDynamic = dynamic(() =>
+  import("./ProjectItem").then((mod) => mod.ProjectItem)
+);
 
 // interface ProjectList {}
 export const ProjectsList: React.FC = () => {

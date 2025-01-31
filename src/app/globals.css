@@ -33,28 +33,13 @@ h3 {
   @apply font-bold text-4xl leading-[50px];
 }
 
-/* h1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-}
-
-@media (min-width: 769px) {
-  h1 {
-    line-height: 60px;
-    font-size: 52px;
-  }
-}
-
-
-
-h4 {
-  @apply font-light text-2xl leading-9 tracking-normal;
+h4{
+  @apply font-bold text-lg;
 }
 
 h5 {
   @apply font-medium text-xl leading-7 tracking-normal;
-} */
+} 
 
 ul,
 ol {
