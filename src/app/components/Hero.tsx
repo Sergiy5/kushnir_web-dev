@@ -1,4 +1,5 @@
-// import { GitAnime } from "./GitAnime";
+"use client";
+
 import { GitAnime } from "./GitAnime";
 import { Button } from "./ui/Button";
 
