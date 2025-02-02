@@ -1,7 +1,6 @@
 "use client";
 
 import { lazy } from "react";
-// import { GitAnime } from "./GitAnime";
 import { Button } from "./ui/Button";
 
 const GitAnimeLazy = lazy(() =>

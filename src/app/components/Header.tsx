@@ -1,18 +1,42 @@
+import Link from "next/link";
 
 export const Header: React.FC = () => {
 
     return (
-      <header className="flex justify-between items-center w-full">
+      <header className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full">
         <div className="container flex justify-between items-center flex-row mx-auto py-5">
           <p className="text-lg font-bold leading-5 text-textDark">
             &lt;SerhiiKushnir&gt;
           </p>
-          <nav className="box-border flex justify-start items-center text-textDark gap-10">
-            <NavItem><a href="#projects" className="p-2">Projects</a></NavItem>
-            <NavItem><p className="p-2">Services</p></NavItem>
-            <NavItem><p className="p-2">GitHub</p></NavItem>
-            <NavItem><p className="p-2">My CV</p></NavItem>
-            <NavItem><p className="p-2">Contacts</p></NavItem>
+          <nav className="flex justify-start items-center text-textDark gap-10">
+            <NavItem>
+              <a href="#projects" className="p-2">
+                Projects
+              </a>
+            </NavItem>
+            <NavItem>
+              <a href="#services" className="p-2">
+                Services
+              </a>
+            </NavItem>
+            <NavItem>
+              <Link
+                href="https://github.com/Sergiy5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2"
+              >
+                GitHub
+              </Link>
+            </NavItem>
+            <NavItem>
+              <p className="p-2">My CV</p>
+            </NavItem>
+            <NavItem>
+              <a href="#contacts" className="p-2">
+                Contacts
+              </a>
+            </NavItem>
           </nav>
         </div>
       </header>

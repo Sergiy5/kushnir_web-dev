@@ -7,7 +7,6 @@ const ProjectItemDynamic = dynamic(() =>
   import("./ProjectItem").then((mod) => mod.ProjectItem)
 );
 
-// interface ProjectList {}
 export const ProjectsList: React.FC = () => {
   return (
     <section

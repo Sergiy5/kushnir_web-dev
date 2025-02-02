@@ -1,0 +1,1 @@
+export const SHOW_DESCRIPTION_TIME = 700;
