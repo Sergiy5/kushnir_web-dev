@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Header } from "./components/Header";
+// import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
@@ -39,7 +39,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg"></link>
       </head>
       <body className={`${advanced_pixel_lcd.className} ${advanced_pixel_lcd.variable} ${spaceGrotesk.className} ${spaceGrotesk.variable} antialiased`}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>
