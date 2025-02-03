@@ -1,12 +1,12 @@
 // import { lazy } from "react";
 import { Button } from "./ui/Button";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 // const GitAnimeLazy = lazy(() =>
 //   import("./GitAnime").then((module) => ({ default: module.GitAnime }))
 // );
 // const GitAnimeDynamic = dynamic(() => import("./GitAnime").then((module) => ({ default: module.GitAnime })));
-// export const Hero: React.FC = () => {
+export const Hero: React.FC = () => {
 
   return (
     <main className="flex justify-start items-start flex-col gap-[54px] w-full lg:h-[560px]">
