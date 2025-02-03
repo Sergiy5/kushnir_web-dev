@@ -1,12 +1,11 @@
-"use client";
-
-import { lazy } from "react";
+// import { lazy } from "react";
 import { Button } from "./ui/Button";
+import dynamic from "next/dynamic";
 
-const GitAnimeLazy = lazy(() =>
-  import("./GitAnime").then((module) => ({ default: module.GitAnime }))
-);
-
+// const GitAnimeLazy = lazy(() =>
+//   import("./GitAnime").then((module) => ({ default: module.GitAnime }))
+// );
+const GitAnimeDynamic = dynamic(() => import("./GitAnime").then((module) => ({ default: module.GitAnime })));
 export const Hero: React.FC = () => {
 
   return (
@@ -30,7 +29,7 @@ export const Hero: React.FC = () => {
           </div>
           {/* Animation start */}
           <div className="flex items-end w-full lg:max-w-[540px] ">
-            <GitAnimeLazy />
+            <GitAnimeDynamic />
           </div>
           {/* Animation end */}
         </div>
