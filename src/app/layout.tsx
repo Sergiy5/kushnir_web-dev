@@ -4,7 +4,6 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-// import Font from "../../public/fonts/technology/Technology-Bold.woff2";
 
 const spaceGrotesk = Space_Grotesk({
   display: "swap",
@@ -13,22 +12,6 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500",  "600", "700"],
 });
 
-// const technology = localFont({
-//   src: [
-//     {
-//       path: "../../public/fonts/technology/Technology-Bold.woff2",
-//       weight: "700",
-//       style: "normal",
-//     },
-//     {
-//       path: "../../public/fonts/technology/Technology.woff2",
-//       weight: "400",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--font-technology",
-//   display: "swap",
-// });
 const advanced_pixel_lcd = localFont({
   src: [
     {

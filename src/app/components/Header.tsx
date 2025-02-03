@@ -1,56 +1,59 @@
-import Link from "next/link";
+"use client";
+
+import { useEffect, useState } from "react";
+import { Icon } from "./ui/Icon";
+import { HeaderNavMenu } from "./HeaderNavMenu";
+import { HeaderNavMenuMobile } from "./HeaderNavMenuMobile";
+import { MainLogo } from "./MainLogo";
 
 export const Header: React.FC = () => {
+  const [isShowMenu, setIsShowMenu] = useState(false);
 
-    return (
+    useEffect(() => {
+      if (isShowMenu) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+      return () => document.body.classList.remove("overflow-hidden");
+    }, [isShowMenu]);
+
+  return (
+    <>
       <header className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full">
         <div className="container flex justify-between items-center flex-row mx-auto py-5">
-          <p className="text-lg font-bold leading-5 text-textDark">
-            &lt;SerhiiKushnir&gt;
+          <MainLogo className="md:block hidden" />
+          <p className="md:hidden block text-lg font-bold leading-5 text-textDark">
+            &lt;SK&gt;
           </p>
-          <nav className="flex justify-start items-center text-textDark gap-10">
-            <NavItem>
-              <a href="#projects" className="p-2">
-                Projects
-              </a>
-            </NavItem>
-            <NavItem>
-              <a href="#services" className="p-2">
-                Services
-              </a>
-            </NavItem>
-            <NavItem>
-              <Link
-                href="https://github.com/Sergiy5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2"
-              >
-                GitHub
-              </Link>
-            </NavItem>
-            <NavItem>
-              <p className="p-2">My CV</p>
-            </NavItem>
-            <NavItem>
-              <a href="#contacts" className="p-2">
-                Contacts
-              </a>
-            </NavItem>
-          </nav>
+          <button
+            type="button"
+            onClick={() => setIsShowMenu(!isShowMenu)}
+            className="flex justify-center items-center md:hidden"
+          >
+            <Icon
+              id="icon-mobile_menu"
+              width={24}
+              height={24}
+              className="text-textDark"
+            />
+          </button>
+          <div
+            className={`absolute z-30 left-0 w-full transition-all duration-500 ease-in-out
+            ${isShowMenu ? "top-0" : "-top-[600px]"}
+            `}
+          >
+            <HeaderNavMenuMobile onClose={() => setIsShowMenu(false)} />
+          </div>
+          <HeaderNavMenu />
         </div>
       </header>
-    );
-}
-interface NavItemProps {
-    children: React.ReactNode;
-}
-
-export const NavItem: React.FC<NavItemProps> = ({children }) => {
-  return (
-    <div className="relative group flex justify-center items-center hover:cursor-pointer" >
-      <span className={`absolute z-10 top-4 -left-1 w-2 h-2  transition-all duration-350 easy-in-out bg-transparent group-hover:bg-green_500 group-active:bg-green_600`} ></span>
-      {children}
-    </div>
+      {isShowMenu && (
+        <div
+          className={`fixed inset-0 z-20 w-lvw h-lvh transition-all duration-1000 ease-in-out bg-bg/50 backdrop-blur-md
+        `}
+        />
+      )}
+    </>
   );
 }

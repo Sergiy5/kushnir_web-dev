@@ -1,3 +1,4 @@
+import { MainLogo } from "./MainLogo";
 import { Button } from "./ui/Button";
 
 export const Footer: React.FC = () => {
@@ -5,7 +6,7 @@ export const Footer: React.FC = () => {
     <div className="block bg-bgFooter text-textFooter w-full">
       <div className="container flex flex-col justify-between gap-6 md:gap-10 mx-auto py-5">
         <div className="flex justify-between items-center w-full">
-          <p className="text-lg font-bold text-white">&lt;SerhiiKushnir&gt;</p>
+         <MainLogo />
           <div className="flex justify-between items-center gap-10">
             <p className="text-inherit">Projects</p>
             <p className="text-inherit">Services</p>

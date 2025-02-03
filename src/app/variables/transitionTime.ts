@@ -1,1 +1,1 @@
-export const SHOW_DESCRIPTION_TIME = 700;
+export const SHOW_DESCRIPTION_TIME = "700";

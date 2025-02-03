@@ -3,9 +3,7 @@
 import Image from "next/image";
 import { ShowMoreBtn } from "./ui/ShowMoreBtn";
 import { Icon } from "./ui/Icon";
-import { useEffect, useState } from "react";
-import { SHOW_DESCRIPTION_TIME } from "../variables";
-
+import { useState } from "react";
 
 interface IProject{
     projectNuber: number;
@@ -21,9 +19,9 @@ interface ProjectItemProps {
 }
 export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   const [isShowDescription, setIsShowDescription] = useState(false);
-  useEffect(() => {
-  console.log(isShowDescription);  
-  },[isShowDescription])
+  // useEffect(() => {
+  // console.log(isShowDescription);  
+  // },[isShowDescription])
   const { projectNuber, title, role, techStack, imgSrcArr } = project;
   
 
@@ -59,7 +57,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                   id="icon-arrow_down"
                   width={25}
                   height={12}
-                  className={`mt-[0.5px] transition-all duration-${SHOW_DESCRIPTION_TIME} easy-in-out ${
+                  className={`mt-[0.5px] transition-all duration-700 easy-in-out ${
                     isShowDescription && "rotate-180"
                   }`}
                 />
@@ -77,7 +75,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           </div>
           {/* Description =============================================================== */}
           <div
-            className={`relative flex items-center justify-between gap-20 w-full transition-all duration-${SHOW_DESCRIPTION_TIME} easy-in-out
+            className={`relative flex items-center justify-between gap-20 w-full transition-all duration-700 easy-in-out
           ${
             isShowDescription
               ? "z-0 max-h-[845px] opacity-100 pt-10"

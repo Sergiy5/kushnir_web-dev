@@ -30,7 +30,7 @@ export default {
       },
       fontFamily: {
         space_grotesk: "var(--font-space-grotesk), sans-serif",
-        technology: "var(--font-technology), sans-serif",
+        // technology: "var(--font-technology), sans-serif",
         advancedPixel: "var(--font-advanced-pixel-lcd), sans-serif",
       },
     },
