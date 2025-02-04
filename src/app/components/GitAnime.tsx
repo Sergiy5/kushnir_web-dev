@@ -4,7 +4,7 @@ import githubAnime from "../../../public/animation/github2.json"
 
 export const GitAnime = () => {
 
-if(window === undefined){
-  return <div>Loading</div>
+if (typeof document === undefined) {
+  return <div>Loading</div>;
 }
   return <Lottie animationData={githubAnime} loop={false} autoplay={true} width={"100px"} height={"100px"} />;};
