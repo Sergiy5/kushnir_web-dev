@@ -6,10 +6,7 @@ import dynamic from "next/dynamic";
 
 const HeroDynamic = dynamic(
   () =>
-    import("./components/Hero").then((module) => ({ default: module.Hero })),
-  {
-    ssr: false,
-  }
+    import("./components/Hero").then((module) => ({ default: module.Hero }))
 );
 
 export default function Home() {
