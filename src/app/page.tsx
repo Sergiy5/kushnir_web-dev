@@ -1,5 +1,5 @@
 import { ProjectsList } from "./components/ProjectsList";
-import { Hero } from "./components/Hero";
+// import { Hero } from "./components/Hero";
 import { ServicesList } from "./components/ServicesList";
 import { ClockContactsSection } from "./components/ClockContactSection";
 import dynamic from "next/dynamic";
