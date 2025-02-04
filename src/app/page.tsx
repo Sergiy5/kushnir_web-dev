@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <ProjectsList />
       <ServicesList />
-      {/* <ClockContactsSection /> */}
+      <ClockContactsSection />
     </div>
   );
 }
