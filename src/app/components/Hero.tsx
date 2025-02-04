@@ -1,5 +1,3 @@
-"use client";
-
 // import { lazy } from "react";
 import { Button } from "./ui/Button";
 import dynamic from "next/dynamic";
