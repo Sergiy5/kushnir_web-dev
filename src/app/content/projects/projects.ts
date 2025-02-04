@@ -2,10 +2,11 @@ export const PROJECTS = [
   {
     title: "Movie Matching Web Application ",
     role: "Full Stack Developer",
+    url: "https://www.reel-reveal.club/",
     techStack:
       "React, TS, Next.js, Tailwind, useSWR, React-Hook-Form, Node.js, MongoDB, Openai API, TMDB API",
     imgSrcArr: ["/images/reel_reveal.webp", "/images/reel_reveal_mob.webp"],
-        description: `As a full-stack developer on this project, I took ownership of both the frontend
+    description: `As a full-stack developer on this project, I took ownership of both the frontend
          and backend development, ensuring a seamless and intuitive user experience.
      
 I built the frontend from scratch using modern frameworks and tools like Next.js, TypeScript, and Tailwind CSS,
@@ -17,6 +18,7 @@ On the backend, I implemented a secure and efficient system using MongoDB for da
   {
     title: "Investors and Startups Matching Web Application",
     role: "Full Stack Developer",
+    url: null,
     techStack:
       "Next.js, TypeScript, Axios, useSWR, Material UI, Tailwind CSS, Strapi, Node.js, PostgreSQL",
     imgSrcArr: ["/images/invest.webp", "/images/invest_register.webp"],
@@ -26,6 +28,7 @@ On the backend, I configured dynamic multilingual components to handle content i
   {
     title: "Teens Ukraine Educational Initiative Game",
     role: "Front End Developer",
+    url: "https://teens-ukraine.games",
     techStack: "React, TS, Next.js, Tailwind",
     imgSrcArr: ["/images/teen.webp", "/images/teen_table.webp"],
     description: `As a front-end developer on this project, I contributed to building an interactive and efficient admin panel and game interface. I designed and implemented the admin panel to calculate participant responses in a real-time super game involving all players simultaneously. I developed the core logic for the super game, including displaying selective, intermediate, and final tables and integrating game mechanics for seamless gameplay.
@@ -34,6 +37,7 @@ I also created reusable solutions, such as the useMusic hook for managing music 
   {
     title: "TeraTeam Startups Colaboration Web Platform",
     role: "Front End Developer",
+    url: "https://terateam.net",
     techStack:
       "React, TS, Next.js, Tailwind, useSWR, Redux, Axios, React-Hook-Form, Yup",
     imgSrcArr: ["/images/marketplace.webp", "/images/form.webp"],
@@ -44,6 +48,7 @@ I also created reusable solutions, such as the useMusic hook for managing music 
   {
     title: "Evently Website: Event Aggregator",
     role: "Front End Developer",
+    url: null,
     techStack:
       "React, TS, Vite, Tailwind CSS, Redux Thunk, Slic Slider, React-Hook-Form",
     imgSrcArr: ["/images/evently.webp", "/images/evently_register.webp"],

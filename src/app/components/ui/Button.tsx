@@ -1,11 +1,11 @@
 interface ButtonProps {
-    children: React.ReactNode
+  children: React.ReactNode
+  className?: string
 }
-export const Button: React.FC<ButtonProps> = ({children}) => {
+export const Button: React.FC<ButtonProps> = ({children, className}) => {
   return (
     <button
-      className={`bg-accentGreen font-sans text-lg font-bold leading-5 text-[black] min-w-[220px] h-[52px] w-full md:w-[220px] cursor-pointer
-     rounded-full border-none transition-all hover:bg-green_600`}
+      className={`buttonOrLink bg-accentGreen border-none hover:bg-green_600 ${className}`}
     >
       {children}
     </button>

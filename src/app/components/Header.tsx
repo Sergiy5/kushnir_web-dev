@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
     <>
       <header className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full">
         <div className="container flex justify-between items-center flex-row mx-auto py-5">
-          <MainLogo className="md:block hidden" />
+          <MainLogo className="md:block text-textDark hidden" />
           <p className="md:hidden block text-lg font-bold leading-5 text-textDark">
             &lt;SK&gt;
           </p>

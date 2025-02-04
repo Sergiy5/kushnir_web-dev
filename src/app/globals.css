@@ -26,11 +26,11 @@ p {
 }
 
 h2 {
-  @apply text-5xl md:text-7xl font-bold uppercase
+  @apply text-3xl md:text-7xl font-bold uppercase
 }
 
 h3 {
-  @apply font-bold text-4xl leading-[50px];
+  @apply font-bold text-3xl md:text-4xl leading-[50px];
 }
 
 h4{
@@ -66,4 +66,14 @@ a {
   font-size: clamp(3rem, 7vw, 7rem);
   line-height: 1.2;
   min-height: 80px;
+}
+
+.responsive-heading-footer {
+  font-size: clamp(4rem, 7vw, 7rem);
+  line-height: 1.2;
+  min-height: 80px;
+}
+
+.buttonOrLink {
+  @apply font-space_grotesk text-lg font-bold leading-5 min-w-[220px] h-[52px] w-full md:w-[220px] cursor-pointer rounded-full transition-all
 }

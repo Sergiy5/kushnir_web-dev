@@ -2,12 +2,6 @@ import { ProjectsList } from "./components/ProjectsList";
 import { Hero } from "./components/Hero";
 import { ServicesList } from "./components/ServicesList";
 import { ClockContactsSection } from "./components/ClockContactSection";
-// import dynamic from "next/dynamic";
-
-// const HeroDynamic = dynamic(
-//   () =>
-//     import("./components/Hero").then((module) => ({ default: module.Hero }))
-// );
 
 export default function Home() {
   return (
@@ -15,7 +9,7 @@ export default function Home() {
       <Hero />
       <ProjectsList />
       <ServicesList />
-      <ClockContactsSection />
+      {/* <ClockContactsSection /> */}
     </div>
   );
 }

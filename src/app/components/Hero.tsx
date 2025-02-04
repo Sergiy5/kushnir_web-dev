@@ -10,7 +10,6 @@ const GitAnimeDynamic = dynamic(
   }
 );
 export const Hero: React.FC = () => {
-
   return (
     <main className="flex justify-start items-start flex-col gap-[54px] w-full lg:h-[560px]">
       <div className="container flex flex-col gap-14">
