@@ -1,10 +1,8 @@
-// import { lazy } from "react";
+"use client";
+
 import { Button } from "./ui/Button";
 import dynamic from "next/dynamic";
 
-// const GitAnimeLazy = lazy(() =>
-//   import("./GitAnime").then((module) => ({ default: module.GitAnime }))
-// );
 const GitAnimeDynamic = dynamic(
   () => import("./GitAnime").then((module) => ({ default: module.GitAnime })),
   {
