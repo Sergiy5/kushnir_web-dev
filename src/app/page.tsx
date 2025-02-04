@@ -4,7 +4,13 @@ import { ServicesList } from "./components/ServicesList";
 import { ClockContactsSection } from "./components/ClockContactSection";
 import dynamic from "next/dynamic";
 
-const HeroDynamic = dynamic(() => import("./components/Hero").then((module) => ({ default: module.Hero })));
+const HeroDynamic = dynamic(
+  () =>
+    import("./components/Hero").then((module) => ({ default: module.Hero })),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (
