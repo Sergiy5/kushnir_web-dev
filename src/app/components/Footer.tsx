@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             <p className="text-inherit">Services</p>
             <p className="text-inherit">GitHub</p>
 
-            <Button className="text-textDark">Download CV</Button>
+            <Button ariaLabel="Download CV" className="text-textDark">Download CV</Button>
           </div>
         </div>
 

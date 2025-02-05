@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
               problem-solving approach, I contribute effectively to both team
               and individual projects.
             </p>
-            <Button>Download CV</Button>
+            <Button ariaLabel="Download CV">Download CV</Button>
           </div>
           {/* Animation start */}
           <div className="flex items-end w-full lg:max-w-[540px] ">

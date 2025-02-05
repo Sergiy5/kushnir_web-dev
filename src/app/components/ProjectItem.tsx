@@ -46,6 +46,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               {techStack}
             </p>
             <ShowMoreBtn
+              ariaLabel="Show more"
               onClick={() => {
                 setIsShowDescription(!isShowDescription);
               }}
@@ -68,12 +69,14 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             src={imgSrcArr[0]}
             width={738}
             height={553}
+            loading="lazy"
             alt="project image"
             sizes="(max-width: 1024px) 100vw, (max-width: 1400px) 50vw, 800px"
             className="rounded-2xl"
           />
 
           <ShowMoreBtn
+            ariaLabel="Show more"
             onClick={() => {
               setIsShowDescription(!isShowDescription);
             }}
@@ -106,6 +109,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             {url?.length && (
               <LinkBtn
                 href={url}
+                ariaLabel="Link to Website"
                 clasName="hidden lg:flex items-center justify-center gap-2 text-textLight border border-grey_500 "
               >
                 Website
@@ -122,6 +126,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             src={imgSrcArr[1]}
             width={738}
             height={553}
+            loading="lazy"
             alt="project image"
             sizes="(max-width: 1024px) 100vw, (max-width: 1400px) 50vw, 800px"
             className="rounded-2xl"
@@ -129,6 +134,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           {url?.length && (
             <LinkBtn
               href={url}
+              ariaLabel="Link to Website"
               clasName="flex items-center justify-center gap-2 text-textLight border border-grey_500 lg:hidden"
             >
               Website

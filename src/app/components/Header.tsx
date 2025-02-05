@@ -28,6 +28,7 @@ export const Header: React.FC = () => {
           </p>
           <button
             type="button"
+            aria-label="Mobile menu"
             onClick={() => setIsShowMenu(!isShowMenu)}
             className="flex justify-center items-center md:hidden"
           >

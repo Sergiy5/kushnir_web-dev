@@ -18,6 +18,7 @@ export const Icon: React.FC<IconProps> = ({
     <svg
       width={width}
       height={height}
+      aria-labelledby={id}
       className={` transition-all easy-in-out ${className}`}
     >
       <use xlinkHref={`/icons/sprite.svg#${id}`} />
