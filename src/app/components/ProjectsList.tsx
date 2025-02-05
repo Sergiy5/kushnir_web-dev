@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { motion } from "motion/react";
 import { PROJECTS } from "../content";
 
 const ProjectItemDynamic = dynamic(() =>
@@ -9,7 +10,10 @@ const ProjectItemDynamic = dynamic(() =>
 
 export const ProjectsList: React.FC = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut", delay: 0.9 }}
       id="projects"
       className="flex justify-center items-center bg-bgProject py-10 md:py-24 w-full rounded-[20px]"
     >
@@ -33,6 +37,6 @@ export const ProjectsList: React.FC = () => {
           })}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };

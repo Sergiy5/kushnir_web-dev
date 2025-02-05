@@ -23,7 +23,8 @@ export const Hero: React.FC = () => {
         >
           Full stack Developer serhii kushnir
         </motion.h1>
-        <div className="flex flex-col items-end lg:flex-row justify-between gap-8">
+        {/* Content */}
+        <div className="flex flex-col items-start lg:flex-row justify-between gap-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
