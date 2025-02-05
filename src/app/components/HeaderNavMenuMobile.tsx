@@ -1,9 +1,8 @@
-
 import Link from "next/link";
-import { Button } from "./ui/Button";
 import { Icon } from "./ui/Icon";
 import { NavItem } from "./HeaderNavItem";
 import { MainLogo } from "./MainLogo";
+import { LinkBtn } from "./ui/LinkBtn";
 
 interface HeaderNavMenuMobileProps {
   onClose: () => void;
@@ -13,8 +12,11 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
   onClose,
 }) => {
   return (
-    <nav onClick={onClose} className="relative z-20 flex flex-col justify-between items-center text-2xl text-textDark bg-bg gap-10 pt-14 pb-4">
-        <MainLogo className="text-2xl" />
+    <nav
+      onClick={onClose}
+      className="relative z-20 flex flex-col justify-between items-center text-2xl text-textDark bg-bg gap-10 pt-14 pb-4"
+    >
+      <MainLogo className="text-2xl" />
       <NavItem>
         <a href="#projects" aria-labelledby="Link to projects" className="p-2">
           Projects
@@ -36,14 +38,20 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
           GitHub
         </Link>
       </NavItem>
-      
+
       <NavItem>
         <a href="#contacts" aria-labelledby="Link to contacts" className="p-2">
           Contacts
         </a>
       </NavItem>
 
-      <Button ariaLabel="Download CV">Download CV</Button>
+      <LinkBtn
+        href="/cv/Serhii_Kushnir_Frontend_Developer.pdf"
+        ariaLabel="Download CV"
+        clasName="downloadLinkBtn"
+      >
+        Open CV
+      </LinkBtn>
       <button
         type="button"
         aria-label="Close menu"

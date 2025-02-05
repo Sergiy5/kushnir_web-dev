@@ -63,7 +63,12 @@ a {
 }
 
 .buttonOrLink {
-  @apply font-space_grotesk text-lg font-bold leading-5 min-w-[220px] h-[52px] w-full md:w-[220px] cursor-pointer rounded-full transition-all
+  @apply flex items-center justify-center font-space_grotesk text-lg font-bold leading-5 min-w-[220px] h-[52px] w-full md:w-[220px]
+   cursor-pointer rounded-full transition-all
+}
+
+.downloadLinkBtn {
+  @apply border-none bg-accentGreen hover:bg-green_600
 }
 
 .responsive-heading {

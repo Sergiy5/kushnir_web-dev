@@ -110,7 +110,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <LinkBtn
                 href={url}
                 ariaLabel="Link to Website"
-                clasName="hidden lg:flex items-center justify-center gap-2 text-textLight border border-grey_500 "
+                clasName="hidden lg:flex items-center justify-center gap-2 text-textLight border border-grey_500 hover:bg-textLight/10"
               >
                 Website
                 <Icon
@@ -135,7 +135,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             <LinkBtn
               href={url}
               ariaLabel="Link to Website"
-              clasName="flex items-center justify-center gap-2 text-textLight border border-grey_500 lg:hidden"
+              clasName="flex items-center justify-center gap-2 text-textLight border border-grey_500 lg:hidden hover:bg-textLight/10"
             >
               Website
               <Icon

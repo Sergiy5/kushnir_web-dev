@@ -1,5 +1,5 @@
 import { MainLogo } from "./MainLogo";
-import { Button } from "./ui/Button";
+import { LinkBtn } from "./ui/LinkBtn";
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +12,13 @@ export const Footer: React.FC = () => {
             <p className="text-inherit">Services</p>
             <p className="text-inherit">GitHub</p>
 
-            <Button ariaLabel="Download CV" className="text-textDark">Download CV</Button>
+            <LinkBtn
+              href="/cv/Serhii_Kushnir_Frontend_Developer.pdf"
+              ariaLabel="Download CV"
+              clasName="downloadLinkBtn text-textDark"
+            >
+              Open CV
+            </LinkBtn>
           </div>
         </div>
 
