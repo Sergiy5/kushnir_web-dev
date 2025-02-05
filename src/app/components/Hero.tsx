@@ -16,9 +16,13 @@ export const Hero: React.FC = () => {
     <main className="flex justify-start items-start flex-col gap-[54px] w-full ">
       <div className="container flex flex-col gap-14">
         <motion.h1
-          initial={{ opacity: 0, y: 30}}
-          animate={{ opacity: 1, y: 0}}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            visualDuration: 0.5,
+            bounce: 0.25,
+          }}
           className="responsive-heading text-[104px] font-bold text-left leading-[114px] uppercase text-[black]"
         >
           Full stack Developer serhii kushnir

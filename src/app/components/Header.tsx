@@ -51,6 +51,7 @@ export const Header: React.FC = () => {
       </header>
       {isShowMenu && (
         <div
+          onClick={() => setIsShowMenu(!isShowMenu)}
           className={`fixed inset-0 z-20 w-lvw h-lvh transition-all duration-1000 ease-in-out bg-bg/50 backdrop-blur-md
         `}
         />
