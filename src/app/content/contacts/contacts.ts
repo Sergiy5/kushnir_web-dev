@@ -11,7 +11,7 @@ export const contacts = [
   },
   {
     text: "/in/serhiikushnir/",
-    url: "https://www.linkedin.com/in/serhiykushnir/",
+    url: "https://www.linkedin.com/in/serhiikushnir",
     service: " LinkedIn ",
   },
 ];
