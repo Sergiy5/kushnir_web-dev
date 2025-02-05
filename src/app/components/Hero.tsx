@@ -13,29 +13,25 @@ const GitAnimeDynamic = dynamic(
 );
 export const Hero: React.FC = () => {
   return (
-    <main className="flex justify-start items-start flex-col gap-[54px] w-full ">
+    <main className="flex flex-col gap-[54px] w-full ">
       <div className="container flex flex-col gap-14">
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            visualDuration: 0.5,
-            bounce: 0.25,
-          }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="responsive-heading text-[104px] font-bold text-left leading-[114px] uppercase text-[black]"
         >
           Full stack Developer serhii kushnir
         </motion.h1>
         {/* Content */}
-        <div className="flex flex-col items-start lg:flex-row justify-between gap-8">
+        <div className="flex flex-col justify-between lg:flex-row gap-8 w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
-            className="flex flex-col justify-between items-start gap-6 lg:max-w-[540px] w-full"
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
+            className="flex flex-col gap-8 lg:max-w-[540px] lg:w-1/2 h-full"
           >
-            <p className=" text-lg font-bold leading-5 text-textDark">
+            <p className="text-lg font-bold leading-5 text-textDark">
               &lt;React TS Next.js Node.js Tailwind CSS-in-JS&gt;
             </p>
             <p className="text-textDark">
@@ -56,7 +52,8 @@ export const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
+            className="flex justify-end w-full lg:w-1/2"
           >
             <Link
               href={"https://github.com/Sergiy5"}

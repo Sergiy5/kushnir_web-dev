@@ -13,7 +13,7 @@ export const ProjectsList: React.FC = () => {
     <motion.section
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeInOut", delay: 0.9 }}
+      transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
       id="projects"
       className="flex justify-center items-center bg-bgProject py-10 md:py-24 w-full rounded-[20px]"
     >
