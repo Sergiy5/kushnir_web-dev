@@ -10,23 +10,20 @@ const DigitalClockDynamic = lazy(() => import("../components/DigitalClock"));
 export const ClockContactsSection: React.FC = () => {
   
   return (
-    <section
-      id="contacts"
-      className="container flex flex-col gap-10"
-    >
+    <section id="contacts" className="container flex flex-col gap-10">
       <h2>Let’s connect</h2>
 
-      <div className=" flex justify-between items-center">
-        <div className="flex justify-center items-center w-1/2 pr-32">
+      <div className=" flex flex-col-reverse lg:flex-row justify-between items-start gap-10">
+        <div className="flex justify-start items-center w-full xl:w-1/2 xl:pr-12">
           <DigitalClockDynamic />
         </div>
-        <div className=" flex flex-col justify-between items-center gap-10 w-1/2 ">
+        <div className=" flex flex-col justify-between items-center gap-10 w-full xl:w-1/2 ">
           <p>
             Thank you for stopping by! I’m always excited to explore new
             opportunities and collaborations. Let’s connect through email,
             phone, LinkedIn, or GitHub—I’d love to hear from you!
           </p>
-          <ul className="flex justify-between items-center w-full">
+          <ul className="flex flex-col md:flex-row flex-wrap justify-start lg:justify-between items-start gap-4 lg:gap-2 w-full">
             {contacts.map((contact, index) => {
               return (
                 <li key={index} className="flex flex-col items-start gap-1">
@@ -34,6 +31,7 @@ export const ClockContactsSection: React.FC = () => {
                     href={contact.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-labelledby="Link to contact"
                     className="group flex flex-col items-start text-grey_500 font-bold gap-2 cursor-pointer transition-all hover:text-grey_400"
                   >
                     {contact.text}
