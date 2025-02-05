@@ -13,7 +13,7 @@ export const ProjectsList: React.FC = () => {
       id="projects"
       className="flex justify-center items-center bg-bgProject py-10 md:py-24 w-full rounded-[20px]"
     >
-      <div className="container flex justify-start items-start flex-col gap-6 lg:gap-24 ">
+      <div className="container flex justify-start items-start flex-col gap-6 ">
         <h2 className="text-textLight uppercase">Selected Projects</h2>
 
         <ul className="flex flex-col">
@@ -26,7 +26,7 @@ export const ProjectsList: React.FC = () => {
                   />
                 </>
                 {index < PROJECTS.length - 1 && (
-                  <div className="w-full h-[0.5px] bg-grey_500"></div>
+                  <div className="w-full h-[0.5px] bg-grey_500/50"></div>
                 )}
               </li>
             );

@@ -68,13 +68,13 @@ a {
 
 .responsive-heading {
   font-size: clamp(3rem, 7vw, 7rem);
-  line-height: 1.2;
+  line-height: 1;
   min-height: 80px;
 }
 
 .responsive-heading-footer {
   font-size: clamp(3rem, 7vw, 7rem);
-  line-height: 1.2;
+  line-height: 1;
   min-height: 80px;
 }
 

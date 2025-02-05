@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <h2 className="font-bold responsive-heading-footer text-center uppercase text-white">
+        <h2 className="font-bold responsive-heading-footer text-start uppercase text-white">
           Full stack Developer{" "}
         </h2>
 

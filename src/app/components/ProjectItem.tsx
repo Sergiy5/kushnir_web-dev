@@ -29,8 +29,8 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
       <div className="relative bg-bgProject">
         <div className="relative z-10 flex justify-between items-center flex-col lg:flex-row gap-5 bg-bgProject">
           {/* Left part ==============================================================*/}
-          <div className=" flex flex-col gap-12 items-start w-full lg:w-[553px] lg:pr-[130px]">
-            <div className="flex flex-col gap-4">
+          <div className=" flex flex-col gap-12 items-start  w-full lg:w-[553px] lg:pr-[130px]">
+            <div className="flex flex-col items-start gap-4">
               <span className="text-grey_500 text-8xl font-bold ">
                 &lt;{projectNuber}&gt;
               </span>
