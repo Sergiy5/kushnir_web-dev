@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { motion } from "motion/react";
 import { LinkBtn } from "./ui/LinkBtn";
 
 const GitAnimeDynamic = dynamic(
@@ -14,11 +15,21 @@ export const Hero: React.FC = () => {
   return (
     <main className="flex justify-start items-start flex-col gap-[54px] w-full ">
       <div className="container flex flex-col gap-14">
-        <h1 className="responsive-heading text-[104px] font-bold text-left leading-[114px] uppercase text-[black]">
+        <motion.h1
+          initial={{ opacity: 0, y: 30}}
+          animate={{ opacity: 1, y: 0}}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="responsive-heading text-[104px] font-bold text-left leading-[114px] uppercase text-[black]"
+        >
           Full stack Developer serhii kushnir
-        </h1>
+        </motion.h1>
         <div className="flex flex-col items-end lg:flex-row justify-between gap-8">
-          <div className="flex flex-col justify-between items-start gap-6 lg:max-w-[540px] w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
+            className="flex flex-col justify-between items-start gap-6 lg:max-w-[540px] w-full"
+          >
             <p className=" text-lg font-bold leading-5 text-textDark">
               &lt;React TS Next.js Node.js Tailwind CSS-in-JS&gt;
             </p>
@@ -35,17 +46,23 @@ export const Hero: React.FC = () => {
             >
               Open CV
             </LinkBtn>
-          </div>
+          </motion.div>
           {/* Animation start */}
-          <Link
-            href={"https://github.com/Sergiy5"}
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-labelledby="Link to GitHub"
-            className="flex items-end w-full lg:max-w-[540px] "
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.6 }}
           >
-            <GitAnimeDynamic />
-          </Link>
+            <Link
+              href={"https://github.com/Sergiy5"}
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-labelledby="Link to GitHub"
+              className="flex items-end w-full lg:max-w-[540px] "
+            >
+              <GitAnimeDynamic />
+            </Link>
+          </motion.div>
           {/* Animation end */}
         </div>
       </div>
