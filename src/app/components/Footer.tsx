@@ -1,10 +1,8 @@
-"use client";
-
-import { motion } from "motion/react"
 import { MainLogo } from "./MainLogo";
 import { LinkBtn } from "./ui/LinkBtn";
 
 export const Footer: React.FC = () => {
+
   return (
     <div className="block bg-bgFooter text-textFooter w-full">
       <div className=" flex flex-col justify-between gap-6 md:gap-10 mx-auto py-5 max-w-[1440px] w-full px-4 md:px-10 lg:px-20 ">
@@ -16,7 +14,7 @@ export const Footer: React.FC = () => {
             <p className="text-inherit">GitHub</p>
 
             <LinkBtn
-              href="/cv/Serhii_Kushnir_Frontend_Developer.pdf"
+              href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
               ariaLabel="Download CV"
               clasName="downloadLinkBtn text-textDark"
             >
@@ -25,14 +23,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <motion.h2
-          // initial={{ x: 0 }}
-          // animate={{ x: "100%" }}
-          // transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
-          className="font-bold responsive-heading-footer text-center lg:text-start uppercase text-white"
-        >
+        <h2 className="font-bold responsive-heading-footer text-center lg:text-start uppercase text-white">
           Full stack Developer{" "}
-        </motion.h2>
+        </h2>
 
         <div className="flex flex-col items-center justify-center w-full">
           {/* Line */}
