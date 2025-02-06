@@ -12,7 +12,7 @@ interface IProject {
   role: string;
   url: string | null;
   techStack: string;
-  description?: string;
+  description?: string[];
   imgSrcArr: string[];
 }
 
@@ -22,7 +22,7 @@ interface ProjectItemProps {
 export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   const [isShowDescription, setIsShowDescription] = useState(false);
 
-  const { projectNuber, title, role, techStack, imgSrcArr, url } = project;
+  const { projectNuber, title, role, techStack, imgSrcArr, url, description } = project;
 
   return (
     <div className="flex flex-col justify-between items-center gap-10 py-12 md:py-[100px]">
@@ -105,7 +105,14 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           `}
         >
           <div className="flex flex-col gap-12 w-full lg:w-[476px]">
-            <p className="text-textLight">{project.description}</p>
+            <ul className="flex flex-col gap-4">
+              {description?.map((item, index) => (
+                <li key={index}>
+                  <p className="text-textLight/80">{item}</p>
+                </li>
+              ))}
+            </ul>
+            {/* <p className="text-textLight">{project.description}</p> */}
             {url?.length && (
               <LinkBtn
                 href={url}

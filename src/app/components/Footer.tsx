@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
             <LinkBtn
               href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
               ariaLabel="Download CV"
-              clasName="downloadLinkBtn text-textDark"
+              clasName="downloadLinkBtn flex text-textDark"
             >
               Open CV
             </LinkBtn>
