@@ -25,7 +25,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   const { projectNuber, title, role, techStack, imgSrcArr, url, description } = project;
 
   return (
-    <div className="flex flex-col justify-between items-center gap-10 py-12 md:py-[100px]">
+    <div className="flex flex-col justify-between items-center gap-10 py-12 lg:py-[100px]">
       <div className="relative bg-bgProject">
         <div className="relative z-10 flex justify-between items-center flex-col lg:flex-row gap-5 bg-bgProject">
           {/* Left part ==============================================================*/}
@@ -95,7 +95,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         </div>
         {/* Description =============================================================== */}
         <div
-          className={`relative flex items-center justify-between flex-col lg:flex-row gap-12 md:gap-24 w-full 
+          className={`relative flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-24 w-full 
             transition-all duration-700 easy-in-out
           ${
             isShowDescription
