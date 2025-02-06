@@ -46,13 +46,14 @@ I also created reusable solutions, such as the useMusic hook for managing music 
       Additionally, I created a universal modal and loader, streamlining user interactions and elevating the application’s overall usability. These contributions demonstrate my focus on delivering efficient, user-centric, and performance-driven solutions.`,
   },
   {
-    title: "Evently Website: Event Aggregator",
+    title: "Book MY Event: Event Aggregator",
     role: "Front End Developer",
     url: null,
     techStack:
       "React, TS, Vite, Tailwind CSS, Redux Thunk, Slic Slider, React-Hook-Form",
     imgSrcArr: ["/images/evently.webp", "/images/evently_register.webp"],
-    description: `As a Front-end Developer on the Evently project, I focused on delivering a seamless user experience through efficient and modern solutions. Utilizing Vite, TypeScript, and Tailwind CSS, I developed secure and user-friendly login and registration components, ensuring a smooth authentication process. 
-Additionally, I implemented a dynamic content slider using Slic Slider, enhancing interactivity and visual appeal.`,
+    description: `
+    Book My Event is a web app that allows users to create, manage, and purchase event tickets seamlessly.
+    As a Frontend Developer on the Book My Event project, I built secure and user-friendly authentication features using React Hook Form and React Thunk. Based on React, Vite, TypeScript, and Tailwind CSS, I ensured a smooth registration and login experience. Additionally, I implemented an interactive Slick Slider, enhancing the platform’s dynamic content presentation`,
   },
 ];
