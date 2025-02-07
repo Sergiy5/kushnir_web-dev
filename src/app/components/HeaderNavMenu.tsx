@@ -24,7 +24,7 @@ export const HeaderNavMenu:React.FC =()=>{ return (
       </Link>
     </NavItem>
     <NavItem>
-      <p className="p-2">My CV</p>
+      <Link href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf" rel="noopener noreferrer" target="_blank" aria-labelledby="Serhii Kishnir CV" className="p-2">My CV</Link>
     </NavItem>
     <NavItem>
       <a href="#contacts" className="p-2">
@@ -32,4 +32,10 @@ export const HeaderNavMenu:React.FC =()=>{ return (
       </a>
     </NavItem>
   </nav>
-);}
+);
+}
+// href={href}
+//       target="_blank"
+//       download={download}
+//       rel="noopener noreferrer"
+//       aria-labelledby={ariaLabel}
