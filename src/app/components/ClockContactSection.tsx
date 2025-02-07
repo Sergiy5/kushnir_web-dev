@@ -14,7 +14,7 @@ export const ClockContactsSection: React.FC = () => {
       <h2>Let’s connect</h2>
 
       <div className=" flex flex-col-reverse lg:flex-row justify-between items-start gap-10">
-        <div className="flex justify-start items-center w-full xl:w-1/2 xl:pr-12">
+        <div className="flex justify-start items-center w-full xl:w-1/2">
           <DigitalClockDynamic />
         </div>
         <div className=" flex flex-col justify-between items-center gap-10 w-full xl:w-1/2 ">
@@ -32,17 +32,17 @@ export const ClockContactsSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-labelledby="Link to contact"
-                    className="group flex flex-col items-start text-grey_500 font-bold gap-2 cursor-pointer transition-all hover:text-grey_400"
+                    className="group flex flex-col items-start font-bold gap-2 cursor-pointer transition-all duration- text-neutral-700 hover:text-black"
                   >
                     {contact.text}
                     <Icon
                       id="icon-arrow-up-right"
                       width={12}
                       height={12}
-                      className="text-grey_500 group-hover:text-grey_400"
+                      className="text-neutral-700 group-hover:text-black"
                     />
                   </Link>
-                  <p>{contact.service}</p>
+                  <p className="">{contact.service}</p>
                 </li>
               );
             })}
