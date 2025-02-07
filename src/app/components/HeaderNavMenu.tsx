@@ -4,14 +4,14 @@ import { NavItem } from "./HeaderNavItem";
 export const HeaderNavMenu:React.FC =()=>{ return (
   <nav className="hidden md:flex justify-between items-center text-textDark gap-5 lg:gap-10">
     <NavItem>
-      <a href="#projects" className="p-2">
+      <Link href="/#projects" className="p-2">
         Projects
-      </a>
+      </Link>
     </NavItem>
     <NavItem>
-      <a href="#services" className="p-2">
+      <Link href="/#services" className="p-2">
         Services
-      </a>
+      </Link>
     </NavItem>
     <NavItem>
       <Link
@@ -27,9 +27,9 @@ export const HeaderNavMenu:React.FC =()=>{ return (
       <Link href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf" rel="noopener noreferrer" target="_blank" aria-labelledby="Serhii Kishnir CV" className="p-2">My CV</Link>
     </NavItem>
     <NavItem>
-      <a href="#contacts" className="p-2">
+      <Link href="/#contacts" className="p-2">
         Contacts
-      </a>
+      </Link>
     </NavItem>
   </nav>
 );
