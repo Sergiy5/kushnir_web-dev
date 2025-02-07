@@ -34,8 +34,3 @@ export const HeaderNavMenu:React.FC =()=>{ return (
   </nav>
 );
 }
-// href={href}
-//       target="_blank"
-//       download={download}
-//       rel="noopener noreferrer"
-//       aria-labelledby={ariaLabel}

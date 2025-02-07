@@ -32,14 +32,14 @@ export const ClockContactsSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-labelledby="Link to contact"
-                    className="group flex flex-col items-start font-bold gap-2 cursor-pointer transition-all duration- text-neutral-700 hover:text-black"
+                    className="group flex flex-col items-start font-bold gap-2 cursor-pointer transition-all duration-300 hover:text-grey_500"
                   >
                     {contact.text}
                     <Icon
                       id="icon-arrow-up-right"
                       width={12}
                       height={12}
-                      className="text-neutral-700 group-hover:text-black"
+                      className="text-black group-hover:text-grey_500"
                     />
                   </Link>
                   <p className="">{contact.service}</p>
