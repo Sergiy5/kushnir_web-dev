@@ -48,7 +48,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
       <LinkBtn
         href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
         ariaLabel="Download CV"
-        clasName="downloadLinkBtn"
+        clasName="downloadLinkBtn flex"
       >
         Open CV
       </LinkBtn>

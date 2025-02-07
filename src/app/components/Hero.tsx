@@ -48,20 +48,20 @@ export const Hero: React.FC = () => {
               Open CV
             </LinkBtn>
           </motion.div>
-          {/* Animation start */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
             className="flex justify-end w-full lg:w-1/2"
-          >
+            >
+              {/* Animation start */}
             <Link
               href={"https://github.com/Sergiy5"}
               rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="Link to GitHub"
               className="flex items-end w-full lg:max-w-[540px] "
-            >
+              >
               <GitAnimeDynamic />
             </Link>
           </motion.div>
