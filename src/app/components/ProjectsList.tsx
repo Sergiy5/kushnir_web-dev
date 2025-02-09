@@ -17,7 +17,7 @@ export const ProjectsList: React.FC = () => {
       id="projects"
       className="flex justify-center items-center bg-bgProject py-10 md:py-24 w-full rounded-[20px]"
     >
-      <div className="container flex justify-start items-start flex-col gap-6 ">
+      <div className="container flex justify-start items-start flex-col ">
         <h2 className="text-textLight uppercase">Selected Projects</h2>
 
         <ul className="flex flex-col">
