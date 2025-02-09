@@ -4,6 +4,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { motion } from "motion/react";
 import { LinkBtn } from "./ui/LinkBtn";
+import { animationHeroComponent, animationHeroTitle } from "../variables";
 
 const GitAnimeDynamic = dynamic(
   () => import("./GitAnime").then((module) => ({ default: module.GitAnime })),
@@ -16,9 +17,7 @@ export const Hero: React.FC = () => {
     <main className="flex flex-col gap-[54px] w-full ">
       <div className="container flex flex-col gap-14">
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          {...animationHeroTitle}
           className="responsive-heading text-[104px] font-bold text-left leading-[114px] uppercase text-[black]"
         >
           Full stack Developer serhii kushnir
@@ -26,9 +25,7 @@ export const Hero: React.FC = () => {
         {/* Content */}
         <div className="flex flex-col justify-between lg:flex-row gap-8 w-full">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
+            {...animationHeroComponent}
             className="flex flex-col gap-8 lg:max-w-[540px] lg:w-1/2 h-full"
           >
             <p className="text-lg font-bold leading-5 text-textDark">
@@ -53,15 +50,15 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
             className="flex justify-end w-full lg:w-1/2"
-            >
-              {/* Animation start */}
+          >
+            {/* Animation start */}
             <Link
               href={"https://github.com/Sergiy5"}
               rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="Link to GitHub"
               className="flex items-end w-full lg:max-w-[540px] "
-              >
+            >
               <GitAnimeDynamic />
             </Link>
           </motion.div>

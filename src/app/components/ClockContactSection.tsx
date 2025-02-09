@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "motion/react";
 import { Icon } from "./ui/Icon";
 import { contacts } from "../content";
 import { lazy } from "react";
+import { animationTitleSection } from "../variables";
 
 const DigitalClockDynamic = lazy(() => import("../components/DigitalClock"));  
 
@@ -11,7 +13,7 @@ export const ClockContactsSection: React.FC = () => {
   
   return (
     <section id="contacts" className="container flex flex-col gap-10">
-      <h2>Let’s connect</h2>
+      <motion.h2 {...animationTitleSection}>Let’s connect</motion.h2>
 
       <div className=" flex flex-col-reverse lg:flex-row justify-between items-start gap-10">
         <div className="flex justify-start items-center w-full xl:w-1/2">

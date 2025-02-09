@@ -5,6 +5,8 @@ import { ShowMoreBtn } from "./ui/ShowMoreBtn";
 import { Icon } from "./ui/Icon";
 import { useState } from "react";
 import { LinkBtn } from "./ui/LinkBtn";
+import { motion } from "motion/react";
+import { animationTitleSection } from "../variables";
 
 interface IProject {
   projectNuber: number;
@@ -29,22 +31,36 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
       <div className="relative bg-bgProject">
         <div className="relative z-10 flex justify-between items-center flex-col lg:flex-row gap-5 bg-bgProject">
           {/* Left part ==============================================================*/}
-          <div className=" flex flex-col gap-12 items-start  w-full lg:w-[553px] lg:pr-[130px]">
+          <div className=" flex flex-col gap-6 items-start  w-full lg:w-[553px] lg:pr-[130px]">
             <div className="flex flex-col items-start gap-4">
-              <span className="text-grey_500 text-8xl font-bold ">
+              <motion.span
+                {...animationTitleSection}
+                className="text-grey_500 text-8xl font-bold "
+              >
                 &lt;{projectNuber}&gt;
-              </span>
-              <h3 className="text-textLight">{title}</h3>
+              </motion.span>
+              <motion.h3
+                {...animationTitleSection}
+                className="text-textLight"
+              >
+                {title}
+              </motion.h3>
+
+            </div>
+            {/* Role and Tech Stack  =================================================*/}
+            <div className="flex flex-col gap-2" >
+
               <p className="flex flex-col items-start text-accentGreen">
                 <span className=" ">Role</span>
                 {role}
               </p>
-            </div>
 
             <p className="flex flex-col items-start font-bold text-textLight">
               <span>Tech Stack</span>
               {techStack}
             </p>
+            </div>
+            {/* Button =============================================================== */}
             <ShowMoreBtn
               ariaLabel="Show more"
               onClick={() => {

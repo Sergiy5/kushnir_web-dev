@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import { MainLogo } from "./MainLogo";
 import { LinkBtn } from "./ui/LinkBtn";
 
@@ -23,9 +26,16 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <h2 className="font-bold responsive-heading-footer text-center lg:text-start uppercase text-white">
+        <motion.h2
+          // initial={{ x: "100%" }}
+          // animate={{ x: "-100%" }}
+          // whileInView="hidden"
+          // viewport={{ once: false }}
+          // transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+          className="font-bold responsive-heading-footer text-center lg:text-start w-full uppercase text-white "
+        >
           Full stack Developer{" "}
-        </h2>
+        </motion.h2>
 
         <div className="flex flex-col items-center justify-center w-full">
           {/* Line */}

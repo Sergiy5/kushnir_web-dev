@@ -1,19 +1,19 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { motion } from "motion/react";
+import { motion} from "motion/react";
 import { PROJECTS } from "../content";
+import { animationTitleSection } from "../variables";
 
 const ProjectItemDynamic = dynamic(() =>
   import("./ProjectItem").then((mod) => mod.ProjectItem)
 );
 
 export const ProjectsList: React.FC = () => {
+   
   return (
     <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
+      {...animationTitleSection}
       id="projects"
       className="flex justify-center items-center bg-bgProject py-10 md:py-24 w-full rounded-[20px]"
     >
