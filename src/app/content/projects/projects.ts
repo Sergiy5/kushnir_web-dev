@@ -4,12 +4,12 @@ export const PROJECTS = [
     role: "Full Stack Developer",
     url: "https://www.reel-reveal.club/",
     techStack:
-      "React, TS, Next.js, Tailwind, useSWR, React-Hook-Form, Node.js, MongoDB, Openai API, TMDB API",
+      "React, TS, Next.js, Tailwind CSS, useSWR, React-Hook-Form, MongoDB, Openai API, TMDB API",
     imgSrcArr: ["/images/reel_reveal.webp", "/images/reel_reveal_mob.webp"],
     description: [
       `As a full-stack developer on this project, I took ownership of both the frontend
          and backend development, ensuring a seamless and intuitive user experience.`,
-      `I built the frontend from scratch using modern frameworks and tools like Next.js, TypeScript, and Tailwind CSS,
+      `I built the frontend from scratch using modern technologies, frameworks and tools like React, Next.js, TypeScript, and Tailwind CSS,
  adhering to industry best practices for structure and scalability.`,
       `On the backend, I implemented a secure and efficient system using MongoDB for data management and Google Authentication
  for user login. Additionally, I integrated the Open AI API to deliver personalized, AI-driven movie recommendations.`,
@@ -31,7 +31,7 @@ export const PROJECTS = [
     title: "Teens Ukraine Educational Initiative Game",
     role: "Front End Developer",
     url: "https://teens-ukraine.games",
-    techStack: "React, TS, Next.js, Tailwind",
+    techStack: "React, TS, Next.js, Tailwind CSS",
     imgSrcArr: ["/images/teen.webp", "/images/teen_table.webp"],
     description: [
       `As a front-end developer on this project, I contributed to building an interactive and efficient admin panel and game interface. I designed and implemented the admin panel to calculate participant responses in a real-time super game involving all players. I developed core logic for the game, including displaying intermediate and final tables, and integrated mechanics for smooth gameplay.`,
@@ -43,7 +43,7 @@ export const PROJECTS = [
     role: "Front End Developer",
     url: "https://terateam.net",
     techStack:
-      "React, TS, Next.js, Tailwind, useSWR, Redux, Axios, React-Hook-Form, Yup",
+      "React, TS, Next.js, Tailwind CSS, useSWR, Redux, Axios, React-Hook-Form, Yup",
     imgSrcArr: ["/images/marketplace.webp", "/images/form.webp"],
     description: [
       `As a front-end developer, I contributed to enhancing the functionality and usability of the project. I developed a new project creation form using useSWR, React Hook Form, Yup, React-Datepicker, and Quill, providing a seamless and intuitive interface for data entry.`,
