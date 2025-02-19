@@ -41,7 +41,7 @@ export const PROJECTS = [
   {
     title: "TeraTeam Startups Colaboration Web Platform",
     role: "Front End Developer",
-    url: "https://terateam.net",
+    url: "", //https://terateam.net
     techStack:
       "React, TS, Next.js, Tailwind CSS, useSWR, Redux, Axios, React-Hook-Form, Yup",
     imgSrcArr: ["/images/marketplace.webp", "/images/form.webp"],
