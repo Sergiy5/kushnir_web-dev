@@ -20,7 +20,7 @@ export const LinkBtn: React.FC<LinkBtnProps> = ({
       target="_blank"
       download={download}
       rel="noopener noreferrer"
-      aria-labelledby={ariaLabel}
+      aria-label={ariaLabel}
       className={`buttonOrLink ${clasName}`}
     >
       {children}

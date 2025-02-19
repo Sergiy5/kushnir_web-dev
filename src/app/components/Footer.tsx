@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { MainLogo } from "./MainLogo";
 import { LinkBtn } from "./ui/LinkBtn";
+import Link from "next/link";
 
 export const Footer: React.FC = () => {
 
@@ -12,9 +13,29 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between gap-10 items-center w-full">
           <MainLogo className="text-textLight" />
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
-            <p className="text-inherit">Projects</p>
-            <p className="text-inherit">Services</p>
-            <p className="text-inherit">GitHub</p>
+            <Link
+              aria-label="link Projects"
+              href="/#projects"
+              className="text-inherit"
+            >
+              Projects
+            </Link>
+            <Link
+              aria-label="link Services"
+              href="/#services"
+              className="text-inherit"
+            >
+              Services
+            </Link>
+            <Link
+              aria-label="link GitHub"
+              href="https://github.com/Sergiy5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-inherit"
+            >
+              GitHub
+            </Link>
 
             <LinkBtn
               href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
@@ -26,14 +47,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <motion.h2
-          // initial={{ x: "100%" }}
-          // animate={{ x: "-100%" }}
-          // whileInView="hidden"
-          // viewport={{ once: false }}
-          // transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
-          className="font-bold responsive-heading-footer text-center lg:text-start w-full uppercase text-white "
-        >
+        <motion.h2 className="font-bold responsive-heading-footer text-center lg:text-start w-full uppercase text-white ">
           Full stack Developer{" "}
         </motion.h2>
 

@@ -12,7 +12,7 @@ const DigitalClockDynamic = lazy(() => import("../components/DigitalClock"));
 export const ClockContactsSection: React.FC = () => {
   
   return (
-    <section id="contacts" className="container flex flex-col gap-10">
+    <section aria-label="Clock and contacts section" id="contacts" className="container flex flex-col gap-10">
       <motion.h2 {...animationTitleSection}>Let’s connect</motion.h2>
 
       <motion.div {...animationSection} className=" flex flex-col-reverse lg:flex-row justify-between items-start gap-10">
@@ -33,7 +33,7 @@ export const ClockContactsSection: React.FC = () => {
                     href={contact.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-labelledby="Link to contact"
+                    aria-label={`Link to contact ${contact.url}`}
                     className="group flex flex-col items-start font-bold gap-2 cursor-pointer transition-all duration-300 hover:text-grey_500"
                   >
                     {contact.text}

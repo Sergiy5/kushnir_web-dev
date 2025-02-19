@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
               href={"https://github.com/Sergiy5"}
               rel="noopener noreferrer"
               target="_blank"
-              aria-labelledby="Link to GitHub"
+              aria-label="Link to GitHub"
               className="flex items-end w-full lg:max-w-[540px] "
             >
               <GitAnimeDynamic />

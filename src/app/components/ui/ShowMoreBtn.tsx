@@ -10,10 +10,11 @@ export const ShowMoreBtn: React.FC<ShowMoreBtnProps> = ({
   ariaLabel,
   className,
 }) => {
+  
   return (
     <button
       type="button"
-      aria-labelledby={ariaLabel}
+      aria-label={ariaLabel}
       onClick={onClick}
       className={`flex items-center justify-between gap-3 w-[125px] text-lg text-textLight boredr-none ${className}`}
     >

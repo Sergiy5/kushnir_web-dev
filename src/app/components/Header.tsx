@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full h-16">
+      <header aria-label="header" className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full h-16">
         <div className="container flex justify-between items-center flex-row mx-auto py-5">
           <MainLogo className="md:block text-textDark hidden" />
           <p className="md:hidden block text-lg font-bold leading-5 text-textDark">
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
           </p>
           <button
             type="button"
-            aria-label="Mobile menu"
+            aria-label="Mobile menu button"
             onClick={() => setIsShowMenu(!isShowMenu)}
             className="flex justify-center items-center md:hidden"
           >

@@ -13,17 +13,18 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
 }) => {
   return (
     <nav
+      aria-label="Nav Mobile menu"
       onClick={onClose}
       className="relative z-20 flex flex-col justify-between items-center text-2xl text-textDark bg-bg gap-10 pt-14 pb-4"
     >
       <MainLogo className="text-2xl" />
       <NavItem>
-        <a href="#projects" aria-labelledby="Link to projects" className="p-2">
+        <a href="#projects" aria-label="Link to projects" className="p-2">
           Projects
         </a>
       </NavItem>
       <NavItem>
-        <a href="#services" aria-labelledby="Link to services" className="p-2">
+        <a href="#services" aria-label="Link to services" className="p-2">
           Services
         </a>
       </NavItem>
@@ -32,7 +33,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
           href="https://github.com/Sergiy5"
           target="_blank"
           rel="noopener noreferrer"
-          aria-labelledby="Link to GitHub"
+          aria-label="Link to GitHub"
           className="p-2"
         >
           GitHub
@@ -40,7 +41,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
       </NavItem>
 
       <NavItem>
-        <a href="#contacts" aria-labelledby="Link to contacts" className="p-2">
+        <a href="#contacts" aria-label="Link to contacts" className="p-2">
           Contacts
         </a>
       </NavItem>

@@ -97,12 +97,13 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               loading="lazy"
               alt="project image"
               sizes="(max-width: 1024px) 100vw, (max-width: 1400px) 50vw, 800px"
+              aria-label="project image"
               className="rounded-2xl"
             />
           </motion.div>
 
           <ShowMoreBtn
-            ariaLabel="Show more"
+            ariaLabel="Show more button"
             onClick={() => {
               setIsShowDescription(!isShowDescription);
             }}
@@ -162,6 +163,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             loading="lazy"
             alt="project image"
             sizes="(max-width: 1024px) 100vw, (max-width: 1400px) 50vw, 800px"
+            aria-label="project image"
             className="rounded-2xl"
           />
           {url?.length && (
