@@ -1,9 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "motion/react";
 import { MainLogo } from "./MainLogo";
 import { LinkBtn } from "./ui/LinkBtn";
-import Link from "next/link";
 
 export const Footer: React.FC = () => {
 

@@ -3,6 +3,7 @@ interface NavItemProps {
 }
 
 export const NavItem: React.FC<NavItemProps> = ({ children }) => {
+  
   return (
     <div className="relative group flex justify-center items-center hover:cursor-pointer">
       <span

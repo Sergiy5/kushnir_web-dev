@@ -4,10 +4,11 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { Icon } from "./ui/Icon";
 import { contacts } from "../content";
-import { lazy } from "react";
+// import { lazy } from "react";
 import { animationSection, animationTitleSection } from "../variables";
+import dynamic from "next/dynamic";
 
-const DigitalClockDynamic = lazy(() => import("../components/DigitalClock"));  
+const DigitalClockDynamic = dynamic(() => import("../components/DigitalClock"));  
 
 export const ClockContactsSection: React.FC = () => {
   
