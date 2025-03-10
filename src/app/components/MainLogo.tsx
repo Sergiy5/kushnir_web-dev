@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface MainLogoProps {
   className?: string;
 }
@@ -5,8 +7,14 @@ interface MainLogoProps {
 export const MainLogo: React.FC<MainLogoProps> = ({ className }) => {
   
   return (
-    <p aria-label="Main logo" className={`font-bold leading-5 ${className}`}>
-      {"<SerhiiKushnir/>"}
-    </p>
+    <Link
+      href="/"
+      aria-label="Link to home page"
+      className="buttonOrLink"
+    >
+      <span aria-labelledby="main logo" className={`font-bold leading-5 ${className}`}>
+        {"<SerhiiKushnir/>"}
+      </span>
+    </Link>
   );
 };
