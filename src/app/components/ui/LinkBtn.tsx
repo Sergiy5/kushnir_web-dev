@@ -17,6 +17,7 @@ export const LinkBtn: React.FC<LinkBtnProps> = ({
   return (
     <Link
       href={href}
+      prefetch={false}
       target="_blank"
       download={download}
       rel="noopener noreferrer"
