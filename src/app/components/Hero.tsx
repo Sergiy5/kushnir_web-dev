@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
               and individual projects.
             </p>
             <LinkBtn
-              href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
+              href="cv/serhii_kushnir_fullstack_developer.pdf"
               ariaLabel="Download CV"
               clasName="downloadLinkBtn flex"
             >
