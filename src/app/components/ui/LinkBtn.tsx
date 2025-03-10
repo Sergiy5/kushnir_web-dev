@@ -14,10 +14,11 @@ export const LinkBtn: React.FC<LinkBtnProps> = ({
   ariaLabel,
   download,
 }) => {
+  
   return (
     <Link
       href={href}
-      prefetch={false}
+      // prefetch={false}
       target="_blank"
       download={download}
       rel="noopener noreferrer"

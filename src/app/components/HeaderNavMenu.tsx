@@ -31,7 +31,7 @@ export const HeaderNavMenu: React.FC = () => {
       </NavItem>
       <NavItem>
         <Link
-          href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
+          href="cv/serhii_kushnir_fullstack_developer.pdf"
           rel="noopener noreferrer"
           target="_blank"
           aria-label="Link to Serhii Kishnir CV"
