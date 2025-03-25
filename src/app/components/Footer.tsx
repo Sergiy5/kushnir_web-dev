@@ -10,9 +10,9 @@ export const Footer: React.FC = () => {
   return (
     <div className="block bg-bgFooter text-textFooter w-full">
       <div className=" flex flex-col justify-between gap-6 md:gap-10 mx-auto py-5 max-w-[1440px] w-full px-4 md:px-10 lg:px-20 ">
-        <div className="flex flex-col md:flex-row justify-between gap-10 items-center w-full">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full">
           <MainLogo className="text-textLight" />
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
+          <div className="flex flex-col md:flex-row items-center md:justify-end gap-6 w-full md:max-w-[540px]">
             <Link
               aria-label="link Projects"
               href="/#projects"
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
             <LinkBtn
               href="cv/serhii_kushnir_fullstack_developer.pdf"
               ariaLabel="Download CV"
-              clasName="downloadLinkBtn flex text-textDark"
+              clasName="downloadLinkBtn w-full flex md:max-w-[220px] text-textDark"
             >
               Open CV
             </LinkBtn>

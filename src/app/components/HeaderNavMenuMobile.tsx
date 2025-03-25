@@ -15,7 +15,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
     <nav
       aria-label="Nav Mobile menu"
       onClick={onClose}
-      className="relative z-20 flex flex-col justify-between items-center text-2xl text-textDark bg-bg gap-10 pt-14 pb-4"
+      className="relative z-20 flex flex-col justify-between items-center text-2xl text-textDark bg-bg gap-10 px-4 pt-14 pb-4"
     >
       <MainLogo className="text-2xl" />
       <NavItem>
@@ -49,7 +49,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
       <LinkBtn
         href="cv/Serhii_Kushnir_Full_Stack_Developer.pdf"
         ariaLabel="Download CV"
-        clasName="downloadLinkBtn flex"
+        clasName="downloadLinkBtn w-full flex"
       >
         Open CV
       </LinkBtn>

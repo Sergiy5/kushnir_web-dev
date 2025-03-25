@@ -63,7 +63,7 @@ a {
 }
 
 .buttonOrLink {
-  @apply items-center justify-center font-space_grotesk text-lg font-bold leading-5 min-w-[220px] h-[52px] w-full md:w-[220px]
+  @apply items-center justify-center font-space_grotesk text-lg font-bold leading-5 min-w-[144px] h-[52px]
    cursor-pointer rounded-full transition-all
 }
 
