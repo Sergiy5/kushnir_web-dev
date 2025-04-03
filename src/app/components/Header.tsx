@@ -25,10 +25,10 @@ export const Header: React.FC = () => {
         className="sticky top-0 z-50 flex justify-between items-center bg-bg/50 backdrop-blur-md w-full h-16"
       >
         <div className="container flex justify-between items-center flex-row mx-auto py-5">
-          <MainLogo className="text-textDark" classNameLink="md:flex hidden" />
-          <p className="md:hidden flex text-lg font-bold leading-5 text-textDark">
-            &lt;SK&gt;
-          </p>
+          <MainLogo
+            classNameLogo="hidden md:flex text-textDark"
+            classNameShortLogo="md:hidden"
+          />
           <button
             type="button"
             aria-label="Mobile menu button"

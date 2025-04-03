@@ -1,23 +1,35 @@
 import Link from "next/link";
 
 interface MainLogoProps {
-  className?: string;
+  classNameShortLogo?: string;
+  classNameLogo?: string;
   classNameLink?: string;
 }
 
-export const MainLogo: React.FC<MainLogoProps> = ({ className, classNameLink }) => {
-  
+export const MainLogo: React.FC<MainLogoProps> = ({
+  classNameLogo,
+  classNameLink,
+  classNameShortLogo,
+}) => {
+  console.log("children", "CHECK HOMANY TIMES");
+
   return (
     <Link
       href="/"
       aria-label="Link to home page"
       className={`buttonOrLink flex my-auto ${classNameLink}`}
     >
-      <span
-        aria-labelledby="main logo"
-        className={`font-bold leading-5 ${className}`}
-      >
-        {"<SerhiiKushnir/>"}
+      <span className="font-bold leading-5 mr-auto">
+        <span
+          className={`${
+            classNameShortLogo ? classNameShortLogo : "hidden"
+          } flex text-lg text-textDark`}
+        >
+          &lt;SK&gt;
+        </span>
+        <span aria-labelledby="main logo" className={` ${classNameLogo}`}>
+          {"<SerhiiKushnir/>"}
+        </span>
       </span>
     </Link>
   );
