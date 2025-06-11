@@ -28,7 +28,7 @@ export const MainLogo: React.FC<MainLogoProps> = ({
           &lt;SK&gt;
         </span>
         <span aria-labelledby="main logo" className={` ${classNameLogo}`}>
-          {"<SerhiiKushnir/>"}
+          {"<SerhiiKushnir />"}
         </span>
       </span>
     </Link>
