@@ -21,7 +21,7 @@ export const Icon: React.FC<IconProps> = ({
       aria-label={id}
       className={` transition-all easy-in-out ${className}`}
     >
-      <use xlinkHref={`/icons/sprite.svg#${id}`} />
+      <use xlinkHref={`/kushnir_web-dev/icons/sprite.svg#${id}`} />
     </svg>
   );
 };

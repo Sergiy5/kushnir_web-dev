@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg"></link>
+        <link rel="icon" type="image/svg+xml" href="/kushnir_web-dev/icons/favicon.svg"></link>
       </head>
       <body className={`${advanced_pixel_lcd.className} ${advanced_pixel_lcd.variable} ${spaceGrotesk.className} ${spaceGrotesk.variable} antialiased`}>
         <Header />

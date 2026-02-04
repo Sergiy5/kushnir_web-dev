@@ -5,7 +5,7 @@ export const PROJECTS = [
     url: "https://www.reel-reveal.club/",
     techStack:
       "React, TS, Next.js, Tailwind CSS, useSWR, React-Hook-Form, MongoDB, Openai API, TMDB API",
-    imgSrcArr: ["/images/reel_reveal.webp", "/images/reel_reveal_mob.webp"],
+    imgSrcArr: ["/kushnir_web-dev/images/reel_reveal.webp", "/kushnir_web-dev/images/reel_reveal_mob.webp"],
     description: [
       `As a full-stack developer on this project, I took ownership of both the frontend
          and backend development, ensuring a seamless and intuitive user experience.`,
@@ -21,7 +21,7 @@ export const PROJECTS = [
     url: null,
     techStack:
       "Next.js, TypeScript, Axios, useSWR, Material UI, Tailwind CSS, Strapi, Node.js, PostgreSQL",
-    imgSrcArr: ["/images/invest.webp", "/images/invest_register.webp"],
+    imgSrcArr: ["/kushnir_web-dev/images/invest.webp", "/kushnir_web-dev/images/invest_register.webp"],
     description: [
       `As a full-stack developer , I was responsible for designing and implementing a scalable and user-centric architecture. On the frontend, I developed the project architecture in line with design requirements, implemented localization to support multilingual components, and built the functionality for user registration and login.`,
       `On the backend, I configured dynamic multilingual components to handle content in multiple languages and integrated the OpenAI API to meet the project’s core functional requirements.`,
@@ -32,7 +32,7 @@ export const PROJECTS = [
     role: "Front End Developer",
     url: "https://teens-ukraine.games",
     techStack: "React, TS, Next.js, Tailwind CSS",
-    imgSrcArr: ["/images/teen.webp", "/images/teen_table.webp"],
+    imgSrcArr: ["/kushnir_web-dev/images/teen.webp", "/kushnir_web-dev/images/teen_table.webp"],
     description: [
       `As a front-end developer on this project, I contributed to building an interactive and efficient admin panel and game interface. I designed and implemented the admin panel to calculate participant responses in a real-time super game involving all players. I developed core logic for the game, including displaying intermediate and final tables, and integrated mechanics for smooth gameplay.`,
       `I also created reusable solutions like the useMusic hook for managing music across components and a useLoader implementation for centralized loader state management. Additionally, I developed new components, such as a disclaimer with a timer before the game starts and reusable modals, loaders, and pop-ups to streamline functionality.`,
@@ -44,7 +44,7 @@ export const PROJECTS = [
     url: "", //https://terateam.net
     techStack:
       "React, TS, Next.js, Tailwind CSS, useSWR, Redux, Axios, React-Hook-Form, Yup",
-    imgSrcArr: ["/images/marketplace.webp", "/images/form.webp"],
+    imgSrcArr: ["/kushnir_web-dev/images/marketplace.webp", "/kushnir_web-dev/images/form.webp"],
     description: [
       `As a front-end developer, I contributed to enhancing the functionality and usability of the project. I developed a new project creation form using useSWR, React Hook Form, Yup, React-Datepicker, and Quill, providing a seamless and intuitive interface for data entry.`,
       `To optimize performance, I implemented SVG sprites, reducing page load times by 25% and improving the user experience. I also refactored the responsive design of the homepage, header, and footer, ensuring a consistent, modern look across devices.`,
@@ -57,7 +57,7 @@ export const PROJECTS = [
     url: null,
     techStack:
       "React, TS, Vite, Tailwind CSS, Redux Thunk, Slic Slider, React-Hook-Form",
-    imgSrcArr: ["/images/evently.webp", "/images/evently_register.webp"],
+    imgSrcArr: ["/kushnir_web-dev/images/evently.webp", "/kushnir_web-dev/images/evently_register.webp"],
     description: [
       `Book My Event is a web app that enables users to create, manage, and purchase event tickets seamlessly.`,
       `As a Frontend Developer on the Book My Event project, I developed secure and user-friendly authentication features using React Hook Form and React Thunk. Built with React, Vite, TypeScript, and Tailwind CSS, I ensured a smooth registration and login experience. Additionally, I implemented an interactive Slick Slider, enhancing the platform’s dynamic content presentation.`,
