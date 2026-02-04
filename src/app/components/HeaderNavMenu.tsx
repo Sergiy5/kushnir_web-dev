@@ -9,14 +9,14 @@ export const HeaderNavMenu: React.FC = () => {
       className="hidden md:flex justify-between items-center text-textDark gap-5 lg:gap-10"
     >
       <NavItem>
-        <Link aria-label="link to projects" href="/#projects" className="p-2">
+        <a aria-label="link to projects" href="#projects" className="p-2">
           Projects
-        </Link>
+        </a>
       </NavItem>
       <NavItem>
-        <Link aria-label="Link to services" href="/#services" className="p-2">
+        <a aria-label="Link to services" href="#services" className="p-2">
           Services
-        </Link>
+        </a>
       </NavItem>
       <NavItem>
         <Link
@@ -41,13 +41,13 @@ export const HeaderNavMenu: React.FC = () => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link
+        <a
           aria-label="Link to contacts section"
-          href="/#contacts"
+          href="#contacts"
           className="p-2"
         >
           Contacts
-        </Link>
+        </a>
       </NavItem>
     </nav>
   );
