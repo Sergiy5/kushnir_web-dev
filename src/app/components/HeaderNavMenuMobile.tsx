@@ -19,14 +19,14 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
     >
       <MainLogo classNameLogo="text-2xl text-textDark" />
       <NavItem>
-        <Link href="#projects" aria-label="Link to projects" className="p-2">
+        <a href="#projects" aria-label="Link to projects" className="p-2">
           Projects
-        </Link>
+        </a>
       </NavItem>
       <NavItem>
-        <Link href="#services" aria-label="Link to services" className="p-2">
+        <a href="#services" aria-label="Link to services" className="p-2">
           Services
-        </Link>
+        </a>
       </NavItem>
       {/* GitHub */}
       <NavItem>
@@ -42,9 +42,9 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
       </NavItem>
 
       <NavItem>
-        <Link href="#contacts" aria-label="Link to contacts" className="p-2">
+        <a href="#contacts" aria-label="Link to contacts" className="p-2">
           Contacts
-        </Link>
+        </a>
       </NavItem>
       {/* CV */}
       <LinkBtn
