@@ -29,6 +29,7 @@ const advanced_pixel_lcd = localFont({
 // };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sergiy5.github.io/kushnir_web-dev"),
   title: "Full Stack Dev Serhii Kushnir",
   description:
     "Hi, I'm a full-stack developer with an engineering background, specializing in scalable and efficient solutions for both team and individual projects.",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     title: "Full Stack Dev Serhii Kushnir",
     description:
       "Hi, I'm a full-stack developer with an engineering background, specializing in scalable and efficient solutions for both team and individual projects.",
-    url: "https://fullstack-dev-sk.vercel.app/", // Your website URL
+    url: "https://sergiy5.github.io/kushnir_web-dev/",
     type: "website",
     images: [
       {
