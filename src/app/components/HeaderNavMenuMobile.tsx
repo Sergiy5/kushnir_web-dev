@@ -28,6 +28,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
           Services
         </Link>
       </NavItem>
+      {/* GitHub */}
       <NavItem>
         <Link
           href="https://github.com/Sergiy5"
@@ -45,7 +46,7 @@ export const HeaderNavMenuMobile: React.FC<HeaderNavMenuMobileProps> = ({
           Contacts
         </Link>
       </NavItem>
-
+      {/* CV */}
       <LinkBtn
         href="cv/serhii_kushnir_full_stack_developer.pdf"
         ariaLabel="Download CV"
