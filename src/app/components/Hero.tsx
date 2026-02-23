@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
               rel="noopener noreferrer"
               target="_blank"
               aria-label="Link to GitHub"
-              className="flex items-end w-full lg:max-w-[540px] "
+              className="flex justify-center lg:items-end w-full lg:max-w-[540px]"
             >
               <GitAnimeDynamic />
             </Link>

@@ -16,7 +16,7 @@ export const GitAnime = () => {
         width={"100px"}
         height={"100px"}
       />
-      <div className="absolute inset-x-0 flex items-center justify-between bg-white h-8 bottom-0 rounded-b-3xl px-4">
+      <div className="absolute inset-x-0 flex items-center justify-between text-black/40 bg-white h-8 pb-2 bottom-0 rounded-b-3xl px-4">
         <p>Feb 23</p>
         <p>{formatted}</p>
       </div>
