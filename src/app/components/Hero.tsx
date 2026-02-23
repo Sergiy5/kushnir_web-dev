@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
             className="flex justify-end w-full lg:w-1/2"
           >
-            {/* Animation start */}
+            {/* Animation*/}
             <Link
               href={"https://github.com/Sergiy5"}
               rel="noopener noreferrer"
@@ -63,7 +63,6 @@ export const Hero: React.FC = () => {
               <GitAnimeDynamic />
             </Link>
           </motion.div>
-          {/* Animation end */}
         </div>
       </div>
     </main>
